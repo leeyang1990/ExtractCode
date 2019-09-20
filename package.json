@@ -1,0 +1,33 @@
+{
+  "name": "extractcode",
+  "version": "1.0.0",
+  "description": "软著代码提取",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc -w",
+    "ext": "tsc && node dist/index.js",
+    "test": "tsc && mocha dist/test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@microsoft/node-core-library": "~3.14.0",
+    "@types/mocha": "^5.2.7",
+    "args": "~5.0.1",
+    "compressing": "~1.4.0",
+    "mocha": "^6.2.0",
+    "node-pandoc": "^0.3.0",
+    "officegen": "^0.6.3",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0",
+    "walk": "~2.3.14",
+    "walk-sync": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/args": "~3.0.0",
+    "@types/node": "~12.7.2",
+    "@types/walk": "~2.3.0",
+    "typescript": "~3.5.3"
+  }
+}
