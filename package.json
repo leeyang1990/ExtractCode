@@ -14,11 +14,13 @@
   "dependencies": {
     "@microsoft/node-core-library": "~3.14.0",
     "@types/mocha": "^5.2.7",
+    "@types/strip-json-comments": "^3.0.0",
     "args": "~5.0.1",
     "compressing": "~1.4.0",
     "mocha": "^6.2.0",
     "node-pandoc": "^0.3.0",
     "officegen": "^0.6.3",
+    "strip-json-comments": "^3.0.1",
     "tslint": "^5.20.0",
     "tslint-config-prettier": "^1.18.0",
     "walk": "~2.3.14",
