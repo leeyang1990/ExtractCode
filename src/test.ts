@@ -27,11 +27,12 @@ describe('main', function() {
   });
   describe('#filterFilePath()', function() {
     it('', ()=> {
-        const excludeLine = ['C:/Users/pc/project/a.ts','C:/Users/pc/project/b.ts'];
+        const excludeLine = ['C:/Users/pc/project/a.ts','C:/Users/pc/project/b.ts','C:/Users/pc/project/d'];
         const src = [
             `C:/Users/pc/project/a.ts`,
             `C:/Users/pc/project/b.ts`,
-            `C:/Users/pc/project/c.ts`
+            `C:/Users/pc/project/c.ts`,
+            `C:/Users/pc/project/d/d.ts`,
         ];
         const result = main.filterFilePath(src,excludeLine);
       assert.equal(result[0], `C:/Users/pc/project/c.ts`);

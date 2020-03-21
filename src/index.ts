@@ -12,7 +12,7 @@ const temp = 'out/temp.txt';
 const excludeFileName:string[] = config.excludeFileName;//排除的文件，文件名
 const excludeFilePath:string[] = config.excludeFilePath;//排除的行，字符串包含
 const excludeLineText:string[] = config.excludeLineText;//排除的行，字符串包含
-const headerText = 'XXXXV1.0  源代码';
+const headerText = config.headerText;
 const fontFace = config.fontFace;
 const fontSize = config.fontSize;
 async function run() {
@@ -38,11 +38,16 @@ export function filterLines(src:string[],ext:string[]){
 }
 ///按文件名排除
 export function filterFileName(paths:string[],exc:string[]){
-    return paths.filter((e)=>exc.indexOf(path.basename(e))===-1);
+    return paths.filter((e)=> exc.indexOf(path.basename(e))===-1);
 }
 ///按文件路径排除
-export function filterFilePath(paths:string[],exc:string[]){
-    return paths.filter((e)=>exc.indexOf(e)===-1);
+export function filterFilePath(paths:string[],excs:string[]){
+    return paths.filter((e)=>{
+        const excsMatch = excs.filter((exc)=>{
+            return e.indexOf(exc) === 0;
+        });
+        return excsMatch.length === 0;
+    });
 }
 ///获取文件列表
 async function getAllFiles(root:string,globs:string[]){
