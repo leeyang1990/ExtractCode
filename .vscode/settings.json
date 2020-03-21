@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "*.json": "jsonc" // JSON文件中可以有注释
+    },
+    "editor.formatOnSave": true, //保存时自动格式化，与下面的配置配合，强行设置格式化规则，保证团队代码缩进风格统一
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    }
+}
