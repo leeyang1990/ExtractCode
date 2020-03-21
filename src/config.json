@@ -1,13 +1,12 @@
 //路劲分割请使用'/'
 {
-    "project":"C:/Users/pc/Desktop/project",//项目目录
-    "globs" :["src/**/*.ts","src/**/*.tsx"],//规则
-    "excludeFileName":[],//按照文件名排除文件
-    "excludeFilePath":[],//按照文件路径排除文件
-    "excludeLineText":[],//按照包含的内容排除行
-    "headerText":"XXXX 源代码V1.0",//页眉
-    "fontFace":"Arial",//字体
-    "fontSize":10,//字号
-    "lineCount":3101//导出代码总行数
-
+    "project": "C:/Users/liyang/Desktop/repo/editor/paper", //项目目录
+    "globs": ["src/**/*.ts", "src/**/*.tsx"], //规则
+    "excludeFileName": [], //按照文件名排除文件
+    "excludeFilePath": [], //按照文件路径排除文件
+    "excludeLineText": [], //按照包含的内容排除行
+    "headerText": "XXXX 源代码V1.0", //页眉
+    "fontFace": "Arial", //字体
+    "fontSize": 10, //字号
+    "lineCount": 3101 //导出代码总行数
 }

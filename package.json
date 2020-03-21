@@ -7,7 +7,8 @@
     "build": "tsc",
     "start": "tsc -w",
     "ext": "tsc && node dist/index.js",
-    "test": "tsc && mocha dist/test.js"
+    "test": "tsc && mocha dist/test.js",
+    "eslint": "eslint src --ext .ts"
   },
   "author": "",
   "license": "ISC",
@@ -21,8 +22,6 @@
     "node-pandoc": "^0.3.0",
     "officegen": "^0.6.3",
     "strip-json-comments": "^3.0.1",
-    "tslint": "^5.20.0",
-    "tslint-config-prettier": "^1.18.0",
     "walk": "~2.3.14",
     "walk-sync": "^2.0.2"
   },
@@ -30,6 +29,10 @@
     "@types/args": "~3.0.0",
     "@types/node": "~12.7.2",
     "@types/walk": "~2.3.0",
-    "typescript": "~3.5.3"
+    "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.24.0",
+    "eslint": "^6.8.0",
+    "prettier": "^1.19.1",
+    "typescript": "^3.5.3"
   }
 }
